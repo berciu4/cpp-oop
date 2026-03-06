@@ -16,14 +16,25 @@ using namespace std;
 //     Cub(double l) { ... }
 //     double calculeazaVolum() { ... }
 // };
+class Cub {
+private:
+    double latura;
+public:
+    Cub(double l) 
+latura = l;
+    }
+
+    double calculeazaVolum() {
+        return latura * latura * latura;
+    };
 
 int main() {
     // TODO: Creează un obiect Cub cu latura 5
     // Exemplu: Cub c(5.0);
-
+Cub c(5.0)
     // TODO: Calculează volumul și afișează
     // Ar trebui să afișeze: 125
     // Exemplu: cout << c.calculeazaVolum() << endl;
-
+cout << c.calculeazaVolum() << endl;
     return 0;
 }
