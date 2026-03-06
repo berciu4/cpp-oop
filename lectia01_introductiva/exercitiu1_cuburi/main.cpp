@@ -2,7 +2,6 @@
 using namespace std;
 
 // TODO: Definește clasa Cub aici, deasupra lui main()
-//
 // Ar trebui să aibă:
 // - atribut privat: double latura
 // - constructor: Cub(double l)
@@ -16,6 +15,14 @@ using namespace std;
 //     Cub(double l) { ... }
 //     double calculeazaVolum() { ... }
 // };
+Class Cub { 
+private:
+    double latura;
+public:
+    Cub(double l)
+    latura = l;
+double calculeazaVolum(){
+    return latura*latura*latura;
 
 int main() {
     // TODO: Creează un obiect Cub cu latura 5
